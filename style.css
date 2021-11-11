@@ -1,0 +1,44 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 50px;
+    animation-name: bigger-font;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: .5s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+/* keyframes */
+
+@keyframes bigger-font {
+    from {
+        font-size: 50px;
+    }
+    to {
+        font-size: 150px;
+    }
+}
+
+button {
+    margin: 50px;
+    padding: 8px 20px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+button:hover {
+    background-color: blue;
+}
